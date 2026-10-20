@@ -148,6 +148,11 @@ h1 { color: var(--marine); font-size: 32px; margin-bottom: 10px; }
 .plan_card:hover { border-color: var(--purple); }
 .plan_card.selected { border-color: var(--purple); background: var(--magnolia); }
 .plan_card h3 { color: var(--marine); }
+.plan_card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: auto;   /* icon stays at the top, text at the bottom */
+}
 .plan_card .price { color: var(--gray); font-size: 14px; }
 .yearly-benefit { color: var(--marine); font-size: 12px; }
 
@@ -244,7 +249,18 @@ h1 { color: var(--marine); font-size: 32px; margin-bottom: 10px; }
 }
 .total strong { color: var(--purple); font-size: 20px; }
 
-.thank-you { text-align: center; align-self: center; }
+/* .thank-you { text-align: center; align-self: center; }
+.thank-you p { color: var(--gray); line-height: 1.6; } */
+
+.thank-you.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.thank-you img { width: 80px; margin-bottom: 24px; }
+.thank-you h1 { margin-bottom: 12px; }
 .thank-you p { color: var(--gray); line-height: 1.6; }
 
 .app { max-width: 100%; }
@@ -292,8 +308,14 @@ h1 { color: var(--marine); font-size: 32px; margin-bottom: 10px; }
   .description { margin-bottom: 24px; }
 
   .plans { flex-direction: column; }
-  .plan_card { min-height: auto; }
-
+  .plan_card {
+    flex-direction: row;       
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    min-height: auto;
+  }
+.plan_card img { margin-bottom: 0; }
   .billing-toggle { gap: 16px; }
 
   .navigation {

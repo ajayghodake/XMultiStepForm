@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <title>Multi Step Form</title>
 
     <link rel="stylesheet" href="style.css" />
@@ -86,20 +88,29 @@
 
           <div class="plans">
             <div class="plan_card" data-name="Arcade" data-monthly="9" data-yearly="90">
-              <h3>Arcade</h3>
-              <p class="price">$9/mo</p>
+              <img src="assets/icon-arcade.svg" alt=""/>
+              <div class="plan-info">
+                <h3>Arcade</h3>
+                <p class="price">$9/mo</p>
+              </div>
               <p class="yearly-benefit">2 months free</p>
             </div>
 
             <div class="plan_card" data-name="Advance" data-monthly="12" data-yearly="120">
-              <h3>Advance</h3>
-              <p class="price">$12/mo</p>
+              <img src="assets/icon-advanced.svg" alt=""/>
+              <div class="plan-info">
+                <h3>Advance</h3>
+                <p class="price">$12/mo</p>
+              </div>
               <p class="yearly-benefit">2 months free</p>
             </div>
 
             <div class="plan_card" data-name="Pro" data-monthly="15" data-yearly="150">
-              <h3>Pro</h3>
-              <p class="price">$15/mo</p>
+              <img src="assets/icon-pro.svg" alt=""/>
+              <div class="plan-info">
+                <h3>Pro</h3>
+                <p class="price">$15/mo</p>
+              </div>
               <p class="yearly-benefit">2 months free</p>
             </div>
 
@@ -183,6 +194,7 @@
         </section>
 
         <section class="form-step thank-you">
+          <img src="assets/icon-thank-you.svg" alt="Thank you icon">
           <h1>Thank You!</h1>
          <p>Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.</p>
         </section>
